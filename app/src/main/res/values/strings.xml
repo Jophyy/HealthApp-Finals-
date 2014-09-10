@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Health Application</string>
+    <string name="hello_world"></string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="spinner_choice">
+        <item>" "</item>
+        <item>Normal Cough</item>
+        <item>Dry Cough</item>
+        <item>Headache</item>
+        <item>Colds</item>
+        <item>Body Pain(General)</item>
+        <item>Constipation</item>
+        <item>Mild Fever(up to 39C)</item>
+        <item>High Fever(39C and above)</item>
+        <item>Stomach Ache</item>
+        <item>Vomitting</item>
+        <item>Fatigue</item>
+    </string-array>
+    <string-array name="spinner_choice2">
+        <item>" "</item>
+        <item>Normal Cough</item>
+        <item>Dry Cough</item>
+        <item>Colds</item>
+        <item>Constipation</item>
+        <item>Body Pain(General)</item>
+        <item>Fatigue</item>
+        <item>Diziness</item>
+        <item>Mild Fever(up to 39C)</item>
+        <item>High Fever(39C and above)</item>
+        <item>Cramps</item>
+        <item>Sore Throat</item>
+    </string-array>
+
+    <string name="title_activity_display_message">Diagnosis</string>
+    <string name="title_activity_display_about">About the App</string>
+    <string name="title_activity_display_help">Need help?</string>
+    <string name="title_activity_display_news">Health-Related News</string>
+
+</resources>
