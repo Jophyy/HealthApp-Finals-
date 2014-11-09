@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -13,25 +14,29 @@ import healthapp.example.com.healthapplication.R;
 
 public class DisplayMessageActivity extends ActionBarActivity {
 
+
+
     @Override
 
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // Get the message from the intent
+        setContentView(R.layout.activity_display_message);
         Intent intent = getIntent();
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
-
-        // Create the text view
-        TextView textView = new TextView(this);
-        textView.setTextSize(15);
+        TextView textView = (TextView) findViewById(R.id.diagMess);
         textView.setText(message);
-        textView.setMovementMethod(new ScrollingMovementMethod());
 
-        // Set the text view as the activity layout
-        setContentView(textView);
+        //final TextView diagnosis = ((TextView) findViewById(R.id.diagMess));
+       // final Spinner group = (Spinner) findViewById(R.id.spinner);
+       // String sickness = group.getSelectedItem().toString();
+        //String sickness2 = group.getSelectedItem().toString();
+
+       // if(sickness.equals("Normal Cough")) {
+       //     diagnosis.setText("a");
+       // }
     }
+
 
 
     @Override
@@ -45,4 +50,6 @@ public class DisplayMessageActivity extends ActionBarActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 }

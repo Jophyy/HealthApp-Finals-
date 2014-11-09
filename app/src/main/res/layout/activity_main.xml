@@ -14,7 +14,8 @@
     //<ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:id="@+id/scrollView">
+        android:id="@+id/scrollView"
+    android:fillViewport="false">
 
 
 
@@ -30,7 +31,7 @@
     android:text="@string/hello_world"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:id="@+id/textView3" />
+    android:id="@+id/diagMess" />
 
 <TextView
     android:layout_width="wrap_content"
@@ -47,23 +48,22 @@
     android:text="Major Sysmptom:"
     android:id="@+id/textView2"
     android:layout_below="@+id/textView"
-    android:layout_toRightOf="@+id/textView3"
+    android:layout_toRightOf="@+id/diagMess"
     android:layout_marginTop="42dp" />
 
 <Spinner
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:id="@+id/spinner"
-    android:layout_below="@+id/textView2"
     android:entries="@array/spinner_choice"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true" />
+    android:layout_below="@+id/textView2"
+    android:layout_centerHorizontal="true" />
 
         <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:id="@+id/txtResult"
-    android:layout_toRightOf="@+id/textView3"
+    android:layout_toRightOf="@+id/diagMess"
     android:layout_marginTop="58dp"
             android:layout_below="@+id/spinner" />
 
@@ -74,8 +74,8 @@
             android:id="@+id/diag2"
             android:onClick="sendMessage"
             android:layout_below="@+id/txtResult"
-            android:layout_alignRight="@+id/textView5"
-            android:layout_alignEnd="@+id/textView5" />
+            android:layout_alignRight="@+id/aboutMess"
+            android:layout_alignEnd="@+id/aboutMess" />
 
         <Button
             android:layout_width="wrap_content"
@@ -90,8 +90,8 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/editText3"
-            android:layout_below="@+id/textView5"
+            android:id="@+id/sick2"
+            android:layout_below="@+id/aboutMess"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignRight="@+id/help"
@@ -101,7 +101,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Secondary Symptoms:"
-            android:id="@+id/textView5"
+            android:id="@+id/aboutMess"
             android:layout_below="@+id/spinner"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
@@ -121,7 +121,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="News"
+            android:text="Database"
             android:id="@+id/button"
             android:layout_alignLeft="@+id/diag2"
             android:layout_alignStart="@+id/diag2"

@@ -30,7 +30,11 @@
         </activity>
         <activity
             android:name=".DisplayNews"
-            android:label="@string/title_activity_display_news" >
+            android:label="Database of Serious Illnesses" >
+        </activity>
+        <activity
+            android:name=".backup"
+            android:label="@string/title_activity_backup" >
         </activity>
     </application>
 

@@ -20,15 +20,11 @@ public class DisplayAbout extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_display_about);
         Intent intent = getIntent();
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
-        // Create the text view
-        TextView textView = new TextView(this);
-        textView.setTextSize(15);
+        TextView textView = (TextView) findViewById(R.id.aboutMess);
         textView.setText(message);
-
-        // Set the text view as the activity layout
-        setContentView(textView);
     }
 
 
