@@ -25,12 +25,12 @@ public class MainActivity extends ActionBarActivity {
         Intent intent = new Intent(this,DisplayAbout.class);
         String message =
                 "The Health Diagnostic Application is an application that gives diagnostics and recommendations on some common and basic " +
-                "sickness like cough, fever, colds etc. It's main purpose is to help people who can't afford basic check up for health issues. Though it is still advisable that you consult your doctor for approriate diagnosis(for serious illnesses) " +
+                "sickness like cough, fever, colds etc. It's main purpose is to help people who can't afford basic check up for health issues.\n\n Though it is still advisable that you consult your doctor for approriate diagnosis(for serious illnesses) " +
                 "The diagnostics and recommendations are based on the research and experience(within the Philippines) conducted by the creator of this app. Also, the research was conducted generally, meaning illnesses were researched based on their common symptoms." +
-                "Please take note that this app is still in developing or beta mode, it can still produce error on some cases." +
+                "\n\nPlease take note that this app is still in developing or beta mode, it can still produce error on some cases." +
                 "Also, the medicines provided on the each diagnosis are based on the most popular brands used on various sickness " +
-                "which are commonly found on advertisements, we remind you to take prescriptions with care. If symptoms persists, " +
-                "please consult your doctor.";
+                "which are commonly found on advertisements, we remind you to take prescriptions with care. \n\nIf symptoms persists, " +
+                "please consult your doctor.\n\n";
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }

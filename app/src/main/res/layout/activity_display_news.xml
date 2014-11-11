@@ -3,6 +3,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mainmessagebg"
     tools:context="healthapp.example.com.healthapplication.DisplayNews"
     tools:ignore="MergeRootFrame" >
     <ScrollView
@@ -16,17 +17,18 @@
             >
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Serious Illnesses List and their Symptoms"
+        android:gravity="center"
+        android:text="Serious Illnesses List \n and their Symptoms"
         android:textStyle="bold"
         android:id="@+id/textView2"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <TextView
+            <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/dbMess"
@@ -34,7 +36,17 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="88dp" />
+        android:layout_marginTop="65dp" />
+
+            <ImageView
+                android:src = "@drawable/database"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>
